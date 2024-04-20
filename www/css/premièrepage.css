@@ -1,0 +1,81 @@
+/* Style pour les liens */
+li:nth-of-type(1) {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+
+li:nth-of-type(2) {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+li:nth-of-type(3) {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+li:nth-of-type(4) {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+li:nth-of-type(5) {
+  position: absolute;
+  top: 10px;
+  right: 125px;
+}
+
+li:nth-of-type(6) {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Couleurs pour chaque bouton */
+.l1 a {
+  background-color: #FF5733;
+}
+
+.active a {
+  background-color: #FFC300;
+}
+
+.l2 a {
+  background-color: #FF5733;
+}
+
+.l3 a {
+  background-color: #900C3F;
+}
+
+.l4 a {
+  background-color: #30920c;
+}
+
+/* Changement de couleur au survol */
+a:hover {
+  background-color: gray;
+}
