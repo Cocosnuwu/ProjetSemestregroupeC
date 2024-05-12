@@ -1,0 +1,123 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : localhost:3306
+-- Généré le : dim. 12 mai 2024 à 21:53
+-- Version du serveur : 10.5.20-MariaDB
+-- Version de PHP : 7.3.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `id22077870_siteweb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `activites`
+--
+
+CREATE TABLE `activites` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Déchargement des données de la table `activites`
+--
+
+INSERT INTO `activites` (`id`, `nom`) VALUES
+(1, 'Course à pieds'),
+(2, 'Cinéma'),
+(3, 'Lecture'),
+(4, 'Voyages'),
+(5, 'Jeux vidéo'),
+(6, 'Natation'),
+(7, 'Judo'),
+(8, 'Basket'),
+(9, 'Foot'),
+(10, 'Velo');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateur`
+--
+
+CREATE TABLE `utilisateur` (
+  `id` int(11) NOT NULL,
+  `Nom` varchar(255) NOT NULL,
+  `Prenom` varchar(255) NOT NULL,
+  `age` int(11) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `vua` int(2) NOT NULL DEFAULT 0,
+  `des` text NOT NULL,
+  `acts` text NOT NULL,
+  `gif1` varchar(255) NOT NULL,
+  `gif2` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `photo1` varchar(255) NOT NULL,
+  `photo2` varchar(255) NOT NULL,
+  `photo3` varchar(255) NOT NULL,
+  `photo4` varchar(255) NOT NULL,
+  `photo5` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`id`, `Nom`, `Prenom`, `age`, `mail`, `password`, `vua`, `des`, `acts`, `gif1`, `gif2`, `photo`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`) VALUES
+(1, 'Andrianavalona', 'Timothé', 24, 'andri.timo@gmail.com', '$2y$10$akEBkNGxILAUyqAhegcE.u6svdROaadake7cANGCe8RGlPv22BV/G', 0, '', '', '', '', '', '', '', '', '', ''),
+(2, 'Bluteau', 'Jean', 15, 'bluteau.jean@gmail.com', '$2y$10$wbxWgZzmoZo1d4XqXCilUe8fZRxUNSgbqlNluKJ1NVDDfb6X8/Bm6', 0, '', '', '', '', '', '', '', '', '', ''),
+(3, 'Bluteau', 'Corentin', 14, 'bluteaucor@cy-tech.fr', '$2y$10$EFr1tU9ygu3c6ybiR.xigughADz8ozjzGc/JgL5o4JyCaYzSTHSDC', 0, 'Incroyable', '2', '1', '1', 'img/3_photo_1_nouveau-label---hve.png', 'img/3_photo1_f93a59c729c6ad3988c52af3b3eb363d.png', 'img/3_photo2_Geto_Suguru.png', '', '', ''),
+(4, 'Andria', 'Tim', 25, 'tim.andria@gmail.com', '$2y$10$zFsd2VZFEkGQtBlwUfgVbO2Tw6pKUy8FsmOsvi8Ck/uiyMwMLmWce', 0, '', '', '', '', '', '', '', '', '', '');
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `activites`
+--
+ALTER TABLE `activites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `mail` (`mail`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `activites`
+--
+ALTER TABLE `activites`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
