@@ -1,0 +1,50 @@
+/* Style pour le conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style pour la section de la photo */
+.photo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour la photo de profil */
+.profile-photo {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Style pour la section des activités */
+.activities-section {
+    margin-bottom: 20px;
+}
+
+/* Style pour la liste des activités */
+.activities-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style pour chaque élément de la liste des activités */
+.activities-list-item {
+    margin-bottom: 5px;
+}
+
+/* Style pour la section de la description */
+.description-section {
+    margin-bottom: 20px;
+}
+
+/* Style pour le titre de la description */
+.description-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style pour le paragraphe de la description */
+.description-paragraph {
+    line-height: 1.5;
+}
