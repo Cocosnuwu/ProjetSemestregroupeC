@@ -1,0 +1,108 @@
+/* Style général pour la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.photo-preview {
+    margin-bottom: 20px;
+}
+
+.photo-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons form {
+    display: inline-block;
+}
+
+.buttons input[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons input[type="submit"]:hover {
+    background-color: #c82333;
+}
