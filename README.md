@@ -6,3 +6,4 @@ Page d'acceuil/Inscription/Base de donnée/Connexion/Menu abonné et utilisateur
 10/05/2024 Page de choix de payement terminé module administrateur rajouté
 12/05/2024 Personnalisation du profil terminé avec activité gif photo plus description et modification ainsi que upload dans la base de donnée des liens plus qu'à faire la vision de cette page par les autres utilisateurs les fonctions administrateurs et la messagerie 
 14/05/2024 Grande amélioration de la gestion de profil et de ca practicité plus que les images et les activitées à refaire et cette partie sera définitivement close
+18/05/2024 Amélioration du système de profil pour changer rapidement + ajout du système de signalement de joueur avec ajout de la table dans la base de donnée appellée signalement
