@@ -1,0 +1,147 @@
+/* Styles du header */
+header {
+  background-color: #1DB954;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Rendre le header fixe pour qu'il reste en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout le reste */
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.search-container {
+  position: relative; /* Positionnement relatif */
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 400px; /* Augmenter la largeur si nécessaire */
+}
+
+.search-bar input[type="search"] {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e0e0e0; /* Changement de couleur au survol */
+}
+
+.search-results {
+  position: absolute; /* Positionnement absolu */
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour chaque résultat dans le menu déroulant */
+.search-results p {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #ccc; /* Ligne de séparation entre chaque résultat */
+}
+
+/* Style pour le lien dans chaque résultat */
+.search-results a {
+  text-decoration: none;
+  color: #333; /* Couleur du texte */
+  display: block; /* Affichage en bloc pour occuper tout l'espace disponible */
+  padding: 10px; /* Ajoutez un espace autour du lien */
+}
+
+/* Style pour le lien au survol */
+.search-results a:hover {
+  background-color: #f0f0f0; /* Changement de couleur au survol */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1DB954;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #158043;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.connexion {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 100px; /* Espace en haut pour éviter de se faire couvrir par le header */
+}
