@@ -1,0 +1,116 @@
+/* Styles du header */
+header {
+  background-color: #1DB954;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.background-container {
+  background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 5000px;
+  margin: auto;
+  text-align: center;
+}
+
+.pricing-table {
+  column-count: 2; /* Deux colonnes */
+  column-gap: 150px; /* Espace entre les colonnes */
+  width: 100%; /* Largeur de la grille */
+  margin: auto;
+}
+
+.pricing-plan {
+  width: 100%; /* Définition de la largeur à 100% */
+  margin-bottom: 20px; /* Espacement entre les encadrés */
+  border: 1px solid #c4f2c4;
+  background-color: #c4f2c4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
+}
+
+.pricing-plan:hover {
+  background-color: #d2fcfd; 
+}
+
+.pricing-plan h3 {
+  color: #333;
+}
+
+.pricing-plan .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.pricing-plan .duration {
+  background-color: #FDF1B8;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.pricing-plan .button {
+  background-color: #5a5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.pricing-plan .button:hover {
+  background-color: #454040;
+}
