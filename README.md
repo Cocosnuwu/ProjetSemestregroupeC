@@ -8,3 +8,4 @@ Page d'acceuil/Inscription/Base de donnée/Connexion/Menu abonné et utilisateur
 14/05/2024 Grande amélioration de la gestion de profil et de ca practicité plus que les images et les activitées à refaire et cette partie sera définitivement close
 18/05/2024 Amélioration du système de profil pour changer rapidement + ajout du système de signalement de joueur avec ajout de la table dans la base de donnée appellée signalement
 19/05/2024 Modification de la page free tour du site rajout de l'aléatoire sur les profils affichés + visiteur ne voit pas le profil en entier + fond logo du site 
+21/05/2024 Ajout du dossier admin + ajout de la page de suppression de profil administrateur + ajout de modification de profil pour les administrateurs 
