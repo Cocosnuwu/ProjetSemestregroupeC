@@ -9,3 +9,4 @@ Page d'acceuil/Inscription/Base de donnée/Connexion/Menu abonné et utilisateur
 18/05/2024 Amélioration du système de profil pour changer rapidement + ajout du système de signalement de joueur avec ajout de la table dans la base de donnée appellée signalement
 19/05/2024 Modification de la page free tour du site rajout de l'aléatoire sur les profils affichés + visiteur ne voit pas le profil en entier + fond logo du site 
 21/05/2024 Ajout du dossier admin + ajout de la page de suppression de profil administrateur + ajout de modification de profil pour les administrateurs 
+24/05/2024 Messagerie entièrement fonctionnelle (un seul bug a régler sur le fait que le menu déroulant de l'utilisateur qui est ajouté  a une conversation est vide + suppression message admin + rangement partie messagerie pour js et css
