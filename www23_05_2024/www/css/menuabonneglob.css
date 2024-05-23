@@ -1,0 +1,271 @@
+/* Styles généraux */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Couleur de fond */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles du header */
+
+header {
+  background-color: #1DB954;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Rendre le header fixe pour qu'il reste en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout le reste */
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styles de la section hero */
+
+.hero {
+  background-color: #009688;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 36px;
+  color: white;
+}
+
+.hero-text {
+  font-size: 20px;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1DB954;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #158043;
+}
+
+/* Styles de la section features */
+
+.features {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Styles du footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Styles de la barre de recherche */
+
+.search-bar {
+  position: relative; /* Positionnement relatif pour les éléments enfants positionnés absolument */
+  display: flex;
+}
+
+.search-bar input[type="search"] {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e0e0e0; /* Changement de couleur au survol */
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%; /* Ajustement de la largeur pour s'adapter à la barre de recherche */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour chaque résultat dans le menu déroulant */
+.search-results p {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #ccc; /* Ligne de séparation entre chaque résultat */
+}
+
+/* Style pour le lien dans chaque résultat */
+.search-results a {
+  text-decoration: none;
+  color: #333; /* Couleur du texte */
+}
+
+/* Style pour le lien au survol */
+.search-results a:hover {
+  background-color: #f0f0f0; /* Changement de couleur au survol */
+}
+
+/* Style pour le message "Aucun résultat trouvé" */
+.no-result {
+    color: black;
+}
+
+/* Styles pour les cartes utilisateurs */
+.main-container {
+  display: flex;
+  justify-content: flex-start; /* Alignement à gauche */
+  align-items: flex-start; /* Alignement en haut */
+}
+
+.random-users-container {
+  display: flex;
+  flex-direction: column; /* Afficher les utilisateurs de haut en bas */
+  gap: 20px; /* Espacement entre les cartes utilisateurs */
+}
+
+.user-card {
+  flex: 1 1 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  margin: 0;
+  color: #666;
+}
+
+.user-actions .btn {
+  background-color: #1DB954;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-actions .btn:hover {
+  background-color: #158043;
+}
+
+.btn-refresh {
+  background-color: #1DB954;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-refresh:hover {
+  background-color: #158043;
+}
+
+/* Styles pour le bandeau premium */
+.premium-banner {
+  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: auto; /* Pour décaler le bandeau à droite */
+  max-width: 300px; /* Ajustez la largeur selon vos besoins

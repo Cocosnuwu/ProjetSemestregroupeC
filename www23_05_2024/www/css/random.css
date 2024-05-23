@@ -1,0 +1,74 @@
+/* Styles pour les cartes utilisateurs */
+.main-container {
+  display: flex;
+  justify-content: flex-start; /* Alignement à gauche */
+  align-items: flex-start; /* Alignement en haut */
+}
+
+.random-users-container {
+  display: flex;
+  flex-direction: column; /* Afficher les utilisateurs de haut en bas */
+  gap: 20px; /* Espacement entre les cartes utilisateurs */
+}
+
+.premium-banner {
+  max-width: 300px;
+  /* Vos autres styles pour le bandeau premium... */
+}
+
+.user-card {
+    flex: 1 1 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  margin: 0;
+  color: #666;
+}
+
+.user-actions .btn {
+  background-color: #1DB954;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-actions .btn:hover {
+  background-color: #158043;
+}
+.btn-refresh {
+  background-color: #1DB954;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-refresh:hover {
+  background-color: #158043;
+}

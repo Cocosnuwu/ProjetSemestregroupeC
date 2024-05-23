@@ -1,0 +1,55 @@
+.premium-banner {
+  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: auto; /* Pour décaler le bandeau à droite */
+  max-width: 300px; /* Ajustez la largeur selon vos besoins */
+}
+
+.premium-banner h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.video-container iframe {
+  position: absolute; /* Position absolue pour placer la vidéo */
+  top: 0; /* Aligne la vidéo en haut */
+  left: 0; /* Aligne la vidéo à gauche */
+  width: 100%; /* Utilise toute la largeur disponible */
+  height: 100%; /* Utilise toute la hauteur disponible */
+}
+
+/* Style pour rendre la vidéo cliquable */
+.video-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.interested-btn {
+  display: block;
+  background-color: #1DB954;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.interested-btn:hover {
+  background-color: #158043;
+}
